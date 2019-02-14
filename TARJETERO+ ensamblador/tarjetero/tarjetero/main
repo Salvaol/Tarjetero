@@ -1,0 +1,19 @@
+/*
+ * tarjetero.c
+ *
+ * Created: 5/10/2016 10:50:49 AM
+ *  Author: Miguel
+ */ 
+
+
+#include <avr/io.h>
+#include "balancin.h"
+
+
+int main(void)
+{
+    while(1)
+    {
+        //TODO:: Please write your application code 
+    }
+}

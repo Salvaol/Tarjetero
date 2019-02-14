@@ -1,0 +1,502 @@
+
+Intento1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000004  00800200  00000360  000003f4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000360  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000a  00800204  00800204  000003f8  2**0
+                  ALLOC
+  3 .stab         000006e4  00000000  00000000  000003f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000085  00000000  00000000  00000adc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_aranges 000000a0  00000000  00000000  00000b68  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000051b  00000000  00000000  00000c08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000148  00000000  00000000  00001123  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000351  00000000  00000000  0000126b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000c0  00000000  00000000  000015bc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000165  00000000  00000000  0000167c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000000b9  00000000  00000000  000017e1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 72 00 	jmp	0xe4	; 0xe4 <__ctors_end>
+   4:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+   8:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+   c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  10:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  14:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  18:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  1c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  20:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  24:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  28:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  2c:	0c 94 54 01 	jmp	0x2a8	; 0x2a8 <__vector_11>
+  30:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  34:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  38:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  3c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  40:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  44:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  48:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  4c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  50:	0c 94 cb 00 	jmp	0x196	; 0x196 <__vector_20>
+  54:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  58:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  5c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  60:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  64:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  68:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  6c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  70:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  74:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  78:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  7c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  80:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  84:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  88:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  8c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  90:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  94:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  98:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  9c:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  a0:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  a4:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  a8:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  ac:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  b0:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  b4:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  b8:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  bc:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  c0:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  c4:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  c8:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  cc:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  d0:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  d4:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  d8:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  dc:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+  e0:	0c 94 94 00 	jmp	0x128	; 0x128 <__bad_interrupt>
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	e0 e6       	ldi	r30, 0x60	; 96
+  fc:	f3 e0       	ldi	r31, 0x03	; 3
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a4 30       	cpi	r26, 0x04	; 4
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+ 10e:	1b be       	out	0x3b, r1	; 59
+
+00000110 <__do_clear_bss>:
+ 110:	12 e0       	ldi	r17, 0x02	; 2
+ 112:	a4 e0       	ldi	r26, 0x04	; 4
+ 114:	b2 e0       	ldi	r27, 0x02	; 2
+ 116:	01 c0       	rjmp	.+2      	; 0x11a <.do_clear_bss_start>
+
+00000118 <.do_clear_bss_loop>:
+ 118:	1d 92       	st	X+, r1
+
+0000011a <.do_clear_bss_start>:
+ 11a:	ae 30       	cpi	r26, 0x0E	; 14
+ 11c:	b1 07       	cpc	r27, r17
+ 11e:	e1 f7       	brne	.-8      	; 0x118 <.do_clear_bss_loop>
+ 120:	0e 94 a3 01 	call	0x346	; 0x346 <main>
+ 124:	0c 94 ae 01 	jmp	0x35c	; 0x35c <_exit>
+
+00000128 <__bad_interrupt>:
+ 128:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000012c <configuracion_balancin>:
+char control_L4=0; //Variable de control para el modo de funcionamiento de L4: vale 1 cuando se ha pulsado la parada de emergencia y 0 cuando la atracción está disponible pero no en funcionamiento
+int PORT_L3=0;
+
+
+void configuracion_balancin(){
+	cli(); // Deshabilitación general de las interrupciones
+ 12c:	f8 94       	cli
+	
+	// Entradas/Salidas
+	// DDR: 0-->entrada 1-->salida
+	
+    SO4DDR  &= 0b11111011; //  SO4 entrada.
+ 12e:	e7 e0       	ldi	r30, 0x07	; 7
+ 130:	f1 e0       	ldi	r31, 0x01	; 1
+ 132:	80 81       	ld	r24, Z
+ 134:	8b 7f       	andi	r24, 0xFB	; 251
+ 136:	80 83       	st	Z, r24
+	SO5DDR  &= 0b11110111; //  SO5 entrada.
+ 138:	80 81       	ld	r24, Z
+ 13a:	87 7f       	andi	r24, 0xF7	; 247
+ 13c:	80 83       	st	Z, r24
+    SW1DDR  &= 0b11101111; //  SW1 entrada.
+ 13e:	80 81       	ld	r24, Z
+ 140:	8f 7e       	andi	r24, 0xEF	; 239
+ 142:	80 83       	st	Z, r24
+    SW3DDR  &= 0b11011111; //  SW3 entrada.
+ 144:	80 81       	ld	r24, Z
+ 146:	8f 7d       	andi	r24, 0xDF	; 223
+ 148:	80 83       	st	Z, r24
+    L3DDR   |= 0b01000000; //  L3 salida.
+ 14a:	ea e0       	ldi	r30, 0x0A	; 10
+ 14c:	f1 e0       	ldi	r31, 0x01	; 1
+ 14e:	80 81       	ld	r24, Z
+ 150:	80 64       	ori	r24, 0x40	; 64
+ 152:	80 83       	st	Z, r24
+    L4DDR   |= 0b10000000; //  L4 salida.
+ 154:	80 81       	ld	r24, Z
+ 156:	80 68       	ori	r24, 0x80	; 128
+ 158:	80 83       	st	Z, r24
+    M2ENDDR |= 0b00001000; //  M2 enable salida.
+ 15a:	80 81       	ld	r24, Z
+ 15c:	88 60       	ori	r24, 0x08	; 8
+ 15e:	80 83       	st	Z, r24
+    M2DIDDR |= 0b00000100; //  M2 direction salida
+ 160:	80 81       	ld	r24, Z
+ 162:	84 60       	ori	r24, 0x04	; 4
+ 164:	80 83       	st	Z, r24
+    M2BKDDR |= 0b00000000; //  M2 brake no se usa en principio
+ 166:	80 81       	ld	r24, Z
+ 168:	80 83       	st	Z, r24
+    
+    // Registros para los timers
+	
+	TCCR1B |= 0x01; // Timer/Counter 1 Control Register B , sin preescalado para el reloj
+ 16a:	e1 e8       	ldi	r30, 0x81	; 129
+ 16c:	f0 e0       	ldi	r31, 0x00	; 0
+ 16e:	80 81       	ld	r24, Z
+ 170:	81 60       	ori	r24, 0x01	; 1
+ 172:	80 83       	st	Z, r24
+    TIMSK1 |= 0x01; // Timer/Counter1 (16 bits), overflow interrupt enable, desbordamiento cada 8192us (cada 65536 ciclos)
+ 174:	ef e6       	ldi	r30, 0x6F	; 111
+ 176:	f0 e0       	ldi	r31, 0x00	; 0
+ 178:	80 81       	ld	r24, Z
+ 17a:	81 60       	ori	r24, 0x01	; 1
+ 17c:	80 83       	st	Z, r24
+	// S05: PCINT19
+	// SW1: PCINT20
+	// SW2: PCINT21
+	
+	/* Interrupciones */
+    PCICR |= 0b00000100; // Mascara global que habilita las PCINT16:23
+ 17e:	e8 e6       	ldi	r30, 0x68	; 104
+ 180:	f0 e0       	ldi	r31, 0x00	; 0
+ 182:	80 81       	ld	r24, Z
+ 184:	84 60       	ori	r24, 0x04	; 4
+ 186:	80 83       	st	Z, r24
+	//PCIFR |= 0b00000100; // Borro posibles interrupciones pendientes en las PCINT16:23 OJO borro todas!
+    PCMSK2 |= 0b00111100; // Máscara local que habilita las PCINT 18,19,20,21
+ 188:	ed e6       	ldi	r30, 0x6D	; 109
+ 18a:	f0 e0       	ldi	r31, 0x00	; 0
+ 18c:	80 81       	ld	r24, Z
+ 18e:	8c 63       	ori	r24, 0x3C	; 60
+ 190:	80 83       	st	Z, r24
+		//EICRB |= 0b10101111; // External Interrupt Control Register B --> 7-4 Sense Control bits
+							 // 1 0 --> the falling edge between two samples of INTn generates an interrupt request    
+		// EIMSK --> External Interrupt Mask Register
+		// EIFR  --> External Interrupt Flag Register
+	
+	sei(); // Habilitación general de las interrupciones
+ 192:	78 94       	sei
+	
+	
+}
+ 194:	08 95       	ret
+
+00000196 <__vector_20>:
+
+
+
+//INTERRUPCIONES 
+
+ISR (TIMER1_OVF_vect) { // Interrupción cada vez que desborda un timer de 16 bits
+ 196:	1f 92       	push	r1
+ 198:	0f 92       	push	r0
+ 19a:	0f b6       	in	r0, 0x3f	; 63
+ 19c:	0f 92       	push	r0
+ 19e:	0b b6       	in	r0, 0x3b	; 59
+ 1a0:	0f 92       	push	r0
+ 1a2:	11 24       	eor	r1, r1
+ 1a4:	2f 93       	push	r18
+ 1a6:	3f 93       	push	r19
+ 1a8:	8f 93       	push	r24
+ 1aa:	9f 93       	push	r25
+ 1ac:	ef 93       	push	r30
+ 1ae:	ff 93       	push	r31
+//Se enmascara cuando funcione la atracción porque sólo se enciende el L4
+	//Interrupcion para el L3
+	if(enable_L3==1)desb_L3++;	
+ 1b0:	80 91 0d 02 	lds	r24, 0x020D
+ 1b4:	81 30       	cpi	r24, 0x01	; 1
+ 1b6:	49 f4       	brne	.+18     	; 0x1ca <__vector_20+0x34>
+ 1b8:	80 91 0b 02 	lds	r24, 0x020B
+ 1bc:	90 91 0c 02 	lds	r25, 0x020C
+ 1c0:	01 96       	adiw	r24, 0x01	; 1
+ 1c2:	90 93 0c 02 	sts	0x020C, r25
+ 1c6:	80 93 0b 02 	sts	0x020B, r24
+	
+	desb_L4_05s++;
+ 1ca:	80 91 09 02 	lds	r24, 0x0209
+ 1ce:	90 91 0a 02 	lds	r25, 0x020A
+ 1d2:	01 96       	adiw	r24, 0x01	; 1
+ 1d4:	90 93 0a 02 	sts	0x020A, r25
+ 1d8:	80 93 09 02 	sts	0x0209, r24
+	desb_L4_02s++;
+ 1dc:	20 91 07 02 	lds	r18, 0x0207
+ 1e0:	30 91 08 02 	lds	r19, 0x0208
+ 1e4:	2f 5f       	subi	r18, 0xFF	; 255
+ 1e6:	3f 4f       	sbci	r19, 0xFF	; 255
+ 1e8:	30 93 08 02 	sts	0x0208, r19
+ 1ec:	20 93 07 02 	sts	0x0207, r18
+	//Interrupcion para el control del led4 en estado DISPONIBLE
+	if((est_actual==DISPONIBLE) && (desb_L4_05s < cuenta05s)) {
+ 1f0:	20 91 02 02 	lds	r18, 0x0202
+ 1f4:	22 30       	cpi	r18, 0x02	; 2
+ 1f6:	41 f4       	brne	.+16     	; 0x208 <__vector_20+0x72>
+ 1f8:	8d 33       	cpi	r24, 0x3D	; 61
+ 1fa:	91 05       	cpc	r25, r1
+ 1fc:	28 f4       	brcc	.+10     	; 0x208 <__vector_20+0x72>
+		ledL4_ON();
+ 1fe:	eb e0       	ldi	r30, 0x0B	; 11
+ 200:	f1 e0       	ldi	r31, 0x01	; 1
+ 202:	80 81       	ld	r24, Z
+ 204:	80 68       	ori	r24, 0x80	; 128
+ 206:	80 83       	st	Z, r24
+	}	 
+		if (desb_L4_05s > cuenta05s) ledL4_OFF();
+ 208:	80 91 09 02 	lds	r24, 0x0209
+ 20c:	90 91 0a 02 	lds	r25, 0x020A
+ 210:	8e 33       	cpi	r24, 0x3E	; 62
+ 212:	91 05       	cpc	r25, r1
+ 214:	28 f0       	brcs	.+10     	; 0x220 <__vector_20+0x8a>
+ 216:	eb e0       	ldi	r30, 0x0B	; 11
+ 218:	f1 e0       	ldi	r31, 0x01	; 1
+ 21a:	80 81       	ld	r24, Z
+ 21c:	8f 77       	andi	r24, 0x7F	; 127
+ 21e:	80 83       	st	Z, r24
+		if(desb_L4_05s == cuenta10s) desb_L4_05s=0;
+ 220:	80 91 09 02 	lds	r24, 0x0209
+ 224:	90 91 0a 02 	lds	r25, 0x020A
+ 228:	24 e0       	ldi	r18, 0x04	; 4
+ 22a:	85 3c       	cpi	r24, 0xC5	; 197
+ 22c:	92 07       	cpc	r25, r18
+ 22e:	21 f4       	brne	.+8      	; 0x238 <__vector_20+0xa2>
+ 230:	10 92 0a 02 	sts	0x020A, r1
+ 234:	10 92 09 02 	sts	0x0209, r1
+			
+		
+	//Interrupcion para el control del led4 en estado EMERGENCIA
+	if((est_actual==EMERGENCIA) && (desb_L4_02s < cuenta02s)) {
+ 238:	80 91 02 02 	lds	r24, 0x0202
+ 23c:	81 30       	cpi	r24, 0x01	; 1
+ 23e:	e1 f4       	brne	.+56     	; 0x278 <__vector_20+0xe2>
+ 240:	80 91 07 02 	lds	r24, 0x0207
+ 244:	90 91 08 02 	lds	r25, 0x0208
+ 248:	88 31       	cpi	r24, 0x18	; 24
+ 24a:	91 05       	cpc	r25, r1
+ 24c:	48 f4       	brcc	.+18     	; 0x260 <__vector_20+0xca>
+		ledL4_ON(); 
+ 24e:	eb e0       	ldi	r30, 0x0B	; 11
+ 250:	f1 e0       	ldi	r31, 0x01	; 1
+ 252:	80 81       	ld	r24, Z
+ 254:	80 68       	ori	r24, 0x80	; 128
+ 256:	80 83       	st	Z, r24
+	}		
+		if (est_actual==EMERGENCIA && desb_L4_02s > cuenta02s) ledL4_OFF();
+ 258:	80 91 02 02 	lds	r24, 0x0202
+ 25c:	81 30       	cpi	r24, 0x01	; 1
+ 25e:	61 f4       	brne	.+24     	; 0x278 <__vector_20+0xe2>
+ 260:	80 91 07 02 	lds	r24, 0x0207
+ 264:	90 91 08 02 	lds	r25, 0x0208
+ 268:	89 31       	cpi	r24, 0x19	; 25
+ 26a:	91 05       	cpc	r25, r1
+ 26c:	28 f0       	brcs	.+10     	; 0x278 <__vector_20+0xe2>
+ 26e:	eb e0       	ldi	r30, 0x0B	; 11
+ 270:	f1 e0       	ldi	r31, 0x01	; 1
+ 272:	80 81       	ld	r24, Z
+ 274:	8f 77       	andi	r24, 0x7F	; 127
+ 276:	80 83       	st	Z, r24
+		if(desb_L4_02s == cuenta1s) desb_L4_02s=0;
+ 278:	80 91 07 02 	lds	r24, 0x0207
+ 27c:	90 91 08 02 	lds	r25, 0x0208
+ 280:	8a 37       	cpi	r24, 0x7A	; 122
+ 282:	91 05       	cpc	r25, r1
+ 284:	21 f4       	brne	.+8      	; 0x28e <__vector_20+0xf8>
+ 286:	10 92 08 02 	sts	0x0208, r1
+ 28a:	10 92 07 02 	sts	0x0207, r1
+			
+					
+}	
+ 28e:	ff 91       	pop	r31
+ 290:	ef 91       	pop	r30
+ 292:	9f 91       	pop	r25
+ 294:	8f 91       	pop	r24
+ 296:	3f 91       	pop	r19
+ 298:	2f 91       	pop	r18
+ 29a:	0f 90       	pop	r0
+ 29c:	0b be       	out	0x3b, r0	; 59
+ 29e:	0f 90       	pop	r0
+ 2a0:	0f be       	out	0x3f, r0	; 63
+ 2a2:	0f 90       	pop	r0
+ 2a4:	1f 90       	pop	r1
+ 2a6:	18 95       	reti
+
+000002a8 <__vector_11>:
+
+ISR(PCINT2_vect) {
+ 2a8:	1f 92       	push	r1
+ 2aa:	0f 92       	push	r0
+ 2ac:	0f b6       	in	r0, 0x3f	; 63
+ 2ae:	0f 92       	push	r0
+ 2b0:	11 24       	eor	r1, r1
+ 2b2:	8f 93       	push	r24
+	//Emergencia
+	if(SW1 == 0) est_actual =EMERGENCIA;
+ 2b4:	80 91 06 01 	lds	r24, 0x0106
+ 2b8:	84 fd       	sbrc	r24, 4
+ 2ba:	03 c0       	rjmp	.+6      	; 0x2c2 <__vector_11+0x1a>
+ 2bc:	81 e0       	ldi	r24, 0x01	; 1
+ 2be:	80 93 02 02 	sts	0x0202, r24
+	
+}
+ 2c2:	8f 91       	pop	r24
+ 2c4:	0f 90       	pop	r0
+ 2c6:	0f be       	out	0x3f, r0	; 63
+ 2c8:	0f 90       	pop	r0
+ 2ca:	1f 90       	pop	r1
+ 2cc:	18 95       	reti
+
+000002ce <control_led_L3>:
+
+
+void control_led_L3(){ // El led 3 solo se ilumina cuando la cola de personas llega a 4. Se mantiene durante 10 s (1221 desbordamientos de Timer de 16 bits) mientras se carga la atracción
+	
+	enable_L3=1;
+ 2ce:	81 e0       	ldi	r24, 0x01	; 1
+ 2d0:	80 93 0d 02 	sts	0x020D, r24
+	while(desb_L3 < cuenta10s && est_actual!=EMERGENCIA) { 
+ 2d4:	80 91 0b 02 	lds	r24, 0x020B
+ 2d8:	90 91 0c 02 	lds	r25, 0x020C
+ 2dc:	24 e0       	ldi	r18, 0x04	; 4
+ 2de:	85 3c       	cpi	r24, 0xC5	; 197
+ 2e0:	92 07       	cpc	r25, r18
+ 2e2:	a8 f4       	brcc	.+42     	; 0x30e <control_led_L3+0x40>
+ 2e4:	80 91 02 02 	lds	r24, 0x0202
+ 2e8:	81 30       	cpi	r24, 0x01	; 1
+ 2ea:	89 f0       	breq	.+34     	; 0x30e <control_led_L3+0x40>
+		ledL3_ON(); 
+ 2ec:	eb e0       	ldi	r30, 0x0B	; 11
+ 2ee:	f1 e0       	ldi	r31, 0x01	; 1
+ 2f0:	80 81       	ld	r24, Z
+ 2f2:	80 64       	ori	r24, 0x40	; 64
+ 2f4:	80 83       	st	Z, r24
+
+
+void control_led_L3(){ // El led 3 solo se ilumina cuando la cola de personas llega a 4. Se mantiene durante 10 s (1221 desbordamientos de Timer de 16 bits) mientras se carga la atracción
+	
+	enable_L3=1;
+	while(desb_L3 < cuenta10s && est_actual!=EMERGENCIA) { 
+ 2f6:	80 91 0b 02 	lds	r24, 0x020B
+ 2fa:	90 91 0c 02 	lds	r25, 0x020C
+ 2fe:	24 e0       	ldi	r18, 0x04	; 4
+ 300:	85 3c       	cpi	r24, 0xC5	; 197
+ 302:	92 07       	cpc	r25, r18
+ 304:	20 f4       	brcc	.+8      	; 0x30e <control_led_L3+0x40>
+ 306:	80 91 02 02 	lds	r24, 0x0202
+ 30a:	81 30       	cpi	r24, 0x01	; 1
+ 30c:	89 f7       	brne	.-30     	; 0x2f0 <control_led_L3+0x22>
+		ledL3_ON(); 
+		}
+	ledL3_OFF();
+ 30e:	eb e0       	ldi	r30, 0x0B	; 11
+ 310:	f1 e0       	ldi	r31, 0x01	; 1
+ 312:	80 81       	ld	r24, Z
+ 314:	8f 7b       	andi	r24, 0xBF	; 191
+ 316:	80 83       	st	Z, r24
+	enable_L3=0;
+ 318:	10 92 0d 02 	sts	0x020D, r1
+	desb_L3=0;
+ 31c:	10 92 0c 02 	sts	0x020C, r1
+ 320:	10 92 0b 02 	sts	0x020B, r1
+	
+}
+ 324:	08 95       	ret
+
+00000326 <emergencia>:
+
+void emergencia(){
+	//Aquí deshabilitaría todas las interrupciones externas, menos la temporal del control del led (faltan)
+	PCICR |= 0b00000000;
+ 326:	e8 e6       	ldi	r30, 0x68	; 104
+ 328:	f0 e0       	ldi	r31, 0x00	; 0
+ 32a:	80 81       	ld	r24, Z
+ 32c:	80 83       	st	Z, r24
+	
+	//Apagamos todo
+	motor_balancin_OFF();
+ 32e:	eb e0       	ldi	r30, 0x0B	; 11
+ 330:	f1 e0       	ldi	r31, 0x01	; 1
+ 332:	80 81       	ld	r24, Z
+ 334:	87 7f       	andi	r24, 0xF7	; 247
+ 336:	80 83       	st	Z, r24
+	ledL4_OFF();
+ 338:	80 81       	ld	r24, Z
+ 33a:	8f 77       	andi	r24, 0x7F	; 127
+ 33c:	80 83       	st	Z, r24
+	ledL3_OFF();
+ 33e:	80 81       	ld	r24, Z
+ 340:	8f 7b       	andi	r24, 0xBF	; 191
+ 342:	80 83       	st	Z, r24
+ 344:	ff cf       	rjmp	.-2      	; 0x344 <emergencia+0x1e>
+
+00000346 <main>:
+extern estado est_actual;
+
+
+int main(void)
+{
+	configuracion_balancin();
+ 346:	0e 94 96 00 	call	0x12c	; 0x12c <configuracion_balancin>
+	
+	control_led_L3();
+ 34a:	0e 94 67 01 	call	0x2ce	; 0x2ce <control_led_L3>
+	
+	if (est_actual==EMERGENCIA) emergencia();
+ 34e:	80 91 02 02 	lds	r24, 0x0202
+ 352:	81 30       	cpi	r24, 0x01	; 1
+ 354:	11 f4       	brne	.+4      	; 0x35a <main+0x14>
+ 356:	0e 94 93 01 	call	0x326	; 0x326 <emergencia>
+ 35a:	ff cf       	rjmp	.-2      	; 0x35a <main+0x14>
+
+0000035c <_exit>:
+ 35c:	f8 94       	cli
+
+0000035e <__stop_program>:
+ 35e:	ff cf       	rjmp	.-2      	; 0x35e <__stop_program>
